@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 9d6e9cb352281f6478edb28a6e23e7bd
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - painelGameOver: {instanceID: 0}
+  - audioSourceMorte: {instanceID: 0}
+  - somMorte: {fileID: 8300000, guid: c92d5d7084270f8429b5fc0e33b431a5, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
