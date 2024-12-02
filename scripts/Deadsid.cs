@@ -15,31 +15,25 @@ public class ControlePersonagem : MonoBehaviour
         estaVivo = true;
     }
 
-    // Método que será chamado quando o personagem morrer
     public void Morrer()
     {
-        if (estaVivo) // Verifica se o personagem ainda está vivo
+        if (estaVivo)
         {
-            estaVivo = false; // Define como morto
+            estaVivo = false; 
 
-            // Reproduz o som de morte
             if (audioSourceMorte != null && somMorte != null)
             {
                 audioSourceMorte.clip = somMorte;
                 audioSourceMorte.Play();
             }
-
-            // Aqui você pode adicionar outras lógicas para quando o personagem morrer
-            // Ex: desativar controles, exibir tela de game over, etc.
         }
     }
 
-    // Método que detecta colisões
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("inimigo"))
         {
-            Morrer(); // Chama o método Morrer quando colidir com um inimigo
+            Morrer(); 
         }
     }
 }
